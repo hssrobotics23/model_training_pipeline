@@ -1,0 +1,9 @@
+# dependencies
+mlflow
+boto3
+pandas
+scikit-learn
+luigi
+tensorflow
+tensorflow-hub
+python-dotenv
