@@ -161,3 +161,4 @@ test/github_token.txt
 .idea/
 
 data/*
+mlruns/*
