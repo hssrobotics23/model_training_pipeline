@@ -8,8 +8,9 @@ load_dotenv()
 
 # Define IO configurations:
 PIPELINE_DATA_DIR = os.environ.get("DATA_DIR", "./data")
-GCS_PROJECT_NAME = os.environ.get("GCS_PROJECT_NAME", "CIRI")
-GCS_DATA_BUCKET = os.environ.get("GCS_DATA_BUCKET", "canirecycleit-data")
+AWS_DATA_BUCKET = os.environ.get("AWS_DATA_BUCKET", "dgmd-s17-assets")
+AWS_DATA_PATH = os.environ.get("AWS_DATA_PATH", "train/downloaded-images/")
+
 MAX_DL_FILES = os.environ.get("MAX_DL_FILES", 300)
 NUM_SHARDS = os.environ.get("NUM_SHARDS", 10)
 
@@ -20,7 +21,7 @@ IMAGE_WIDTH = os.environ.get("IMAGE_WIDTH", 256)
 IMAGE_HEIGHT = os.environ.get("IMAGE_HEIGHT", 192)
 
 # Define ML Hyperparameters:
-# EPOCHS = os.environ.get("EPOCHS", 2)
-EPOCHS = os.environ.get("EPOCHS", 15)
+EPOCHS = os.environ.get("EPOCHS", 2)
+# EPOCHS = os.environ.get("EPOCHS", 15)
 DECAY_RATE = os.environ.get("DECAY_RATE", 0.5)
 LEARNING_RATE = os.environ.get("LEARNING_RATE", 0.01)

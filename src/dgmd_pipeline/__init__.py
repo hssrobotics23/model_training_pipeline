@@ -1,1 +1,1 @@
-"""CIRI pipeline main module."""
+"""DGMD pipeline main module."""
