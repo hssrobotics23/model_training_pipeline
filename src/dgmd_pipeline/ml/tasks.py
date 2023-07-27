@@ -7,6 +7,7 @@ import shutil
 import dgmd_pipeline.settings as settings
 import luigi
 import mlflow
+import mlflow.keras
 import tensorflow as tf
 import tensorflow_hub as hub
 from dgmd_pipeline.io.tasks import LimitTrainingFiles

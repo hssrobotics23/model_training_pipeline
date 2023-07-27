@@ -9,10 +9,7 @@ RUN python -m pip install --upgrade pip
 WORKDIR /app
 COPY . /app
 
-# Install with DOCKER_BUILDKIT caching
-# https://pythonspeed.com/articles/docker-cache-pip-downloads/
-RUN --mount=type=cache,target=/root/.cache \
-    pip install -e .
+RUN pip install -e .
 
 # Execute the machine learning pipeline:
 CMD python pipeline.py
