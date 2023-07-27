@@ -433,7 +433,7 @@ class TrainModel(luigi.Task):
             mlflow.log_artifact(label_mapping)
 
             mlflow.keras.log_model(
-                model, "model", registered_model_name="dgmd_spice_model"
+                model, "model", registered_model_name=settings.MODEL_NAME
             )
 
         logging.info("Finished model pipeline")

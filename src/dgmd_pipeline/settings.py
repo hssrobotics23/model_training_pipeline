@@ -25,3 +25,5 @@ EPOCHS = os.environ.get("EPOCHS", 2)
 # EPOCHS = os.environ.get("EPOCHS", 15)
 DECAY_RATE = os.environ.get("DECAY_RATE", 0.5)
 LEARNING_RATE = os.environ.get("LEARNING_RATE", 0.01)
+
+MODEL_NAME = os.environ.get("MODEL_NAME", "dgmd_model")
