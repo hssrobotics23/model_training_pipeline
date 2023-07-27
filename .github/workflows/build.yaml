@@ -1,9 +1,9 @@
-name: CIRI Model Pipeline Build
+name: DGMD Model Pipeline Build
 
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   buildContainer:
