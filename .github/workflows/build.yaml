@@ -22,15 +22,13 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build Container Image
-        env:
-          DOCKER_BUILDKIT: 1
         run: |
           set -e
-          docker build -t ciri_model_pipeline:latest .
-          docker tag ciri_model_pipeline:latest \
-                      ghcr.io/${{ github.repository }}/ciri_model_pipeline:latest
+          docker build -t dgmd_model_pipeline:latest .
+          docker tag dgmd_model_pipeline:latest \
+                      ghcr.io/${{ github.repository }}/dgmd_model_pipeline:latest
 
       - name: Push Container Image
         run: |
           set -e
-          docker push ghcr.io/${{ github.repository }}/ciri_model_pipeline:latest
+          docker push ghcr.io/${{ github.repository }}/dgmd_model_pipeline:latest
